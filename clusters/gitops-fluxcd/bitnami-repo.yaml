@@ -1,4 +1,4 @@
-apiVersion: source.toolkit.fluxcd.io/v1beta2
+apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:
   name: bitnami
@@ -6,4 +6,4 @@ metadata:
 spec:
   interval: 10m
   url: https://charts.bitnami.com/bitnami
-  insecureSkipTLSVerify: true   # 👈 add this line
+  insecureSkipVerify: true   # ✅ correct for v1
