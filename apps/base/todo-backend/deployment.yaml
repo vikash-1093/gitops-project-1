@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: todo-backend
+  labels:
+    app: todo-backend
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: todo-backend
+  template:
+    metadata:
+      labels:
+        app: todo-backend
+    spec:
+      containers:
+      - name: backend
+        image: ghcr.io/vikash-1093/todo-backend:latest
+        env:
+        - name: DB_HOST
+          value: postgres
+        - name: DB_USER
+          value: todo_user
+        - name: DB_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: postgres-secret
+              key: password
+        - name: DB_NAME
+          value: todo_db
+        ports:
+        - containerPort: 3000
