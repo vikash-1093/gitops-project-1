@@ -19,5 +19,4 @@ spec:
       database: todo_db
     primary:
       persistence:
-        enabled: true
-        size: 1Gi
+        enabled: false
