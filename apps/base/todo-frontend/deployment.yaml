@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: docker.io/vikashyogendrarao/todo-frontend:v1
+        image: docker.io/vikashyogendrarao/todo-frontend:v2
         env:
           - name: REACT_APP_API_URL
             value: "http://todo-backend:3000"
