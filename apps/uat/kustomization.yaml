@@ -3,6 +3,7 @@ resources:
   - ../base/todo-backend
   - ../base/postgres
   - namespace.yaml
+  - postgres-secret.yaml
 patchesStrategicMerge:
   - |-
     apiVersion: apps/v1
