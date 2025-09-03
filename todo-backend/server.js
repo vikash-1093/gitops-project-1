@@ -15,6 +15,7 @@ const pool = new Pool({
   port: 5432,
 });
 
+// Ensure table exists
 pool.query(`
   CREATE TABLE IF NOT EXISTS tasks (
     id SERIAL PRIMARY KEY,
