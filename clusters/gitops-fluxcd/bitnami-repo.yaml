@@ -5,5 +5,4 @@ metadata:
   namespace: flux-system
 spec:
   interval: 10m
-  url: https://charts.bitnami.com/bitnami
-  insecureSkipVerify: true   # ✅ correct for v1
+  url: http://charts.bitnami.com/bitnami   # 👈 switch to HTTP
