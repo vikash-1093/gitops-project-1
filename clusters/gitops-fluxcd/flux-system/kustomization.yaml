@@ -4,7 +4,7 @@ resources:
   - gotk-components.yaml
   - gotk-sync.yaml
   # environment kustomizations
-  - ../fluxcd/qa-kustomization.yaml
-  - ../fluxcd/stg-kustomization.yaml
-  - ../fluxcd/uat-kustomization.yaml
-  - ../fluxcd/prod-kustomization.yaml
+  - ../../fluxcd/qa-kustomization.yaml
+  - ../../fluxcd/stg-kustomization.yaml
+  - ../../fluxcd/uat-kustomization.yaml
+  - ../../fluxcd/prod-kustomization.yaml
