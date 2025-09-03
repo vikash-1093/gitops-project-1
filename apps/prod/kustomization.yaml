@@ -1,9 +1,9 @@
 resources:
   - ../base/todo-frontend
   - ../base/todo-backend
-  - ../base/postgres
   - namespace.yaml
   - postgres-secret.yaml
+  - postgres-helmrelease.yaml
 patchesStrategicMerge:
   - |-
     apiVersion: apps/v1
