@@ -11,11 +11,11 @@ patchesStrategicMerge:
     metadata:
       name: todo-frontend
     spec:
-      replicas: 3   # prod = HA setup
+      replicas: 1   # prod = HA setup
   - |-
     apiVersion: apps/v1
     kind: Deployment
     metadata:
       name: todo-backend
     spec:
-      replicas: 3
+      replicas: 1

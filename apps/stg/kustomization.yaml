@@ -10,11 +10,11 @@ patchesStrategicMerge:
     metadata:
       name: todo-frontend
     spec:
-      replicas: 2   # staging = medium load
+      replicas: 1   # staging = medium load
   - |-
     apiVersion: apps/v1
     kind: Deployment
     metadata:
       name: todo-backend
     spec:
-      replicas: 2
+      replicas: 1
