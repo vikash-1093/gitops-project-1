@@ -3,6 +3,7 @@ resources:
   - ../base/todo-backend
   - ../base/postgres
   - namespace.yaml
+
 patchesStrategicMerge:
   - |-
     apiVersion: apps/v1
@@ -10,11 +11,11 @@ patchesStrategicMerge:
     metadata:
       name: todo-frontend
     spec:
-      replicas: 1   # QA = smallest scale
+      replicas: 3   # prod = HA setup
   - |-
     apiVersion: apps/v1
     kind: Deployment
     metadata:
       name: todo-backend
     spec:
-      replicas: 1
+      replicas: 3

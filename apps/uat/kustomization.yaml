@@ -10,11 +10,11 @@ patchesStrategicMerge:
     metadata:
       name: todo-frontend
     spec:
-      replicas: 1   # QA = smallest scale
+      replicas: 2   # UAT = close to prod, but not full scale
   - |-
     apiVersion: apps/v1
     kind: Deployment
     metadata:
       name: todo-backend
     spec:
-      replicas: 1
+      replicas: 2
