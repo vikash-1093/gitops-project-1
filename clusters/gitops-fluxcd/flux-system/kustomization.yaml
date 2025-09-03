@@ -3,8 +3,8 @@ kind: Kustomization
 resources:
   - gotk-components.yaml
   - gotk-sync.yaml
-  # environment kustomizations
-  - ../../fluxcd/qa-kustomization.yaml
-  - ../../fluxcd/stg-kustomization.yaml
-  - ../../fluxcd/uat-kustomization.yaml
-  - ../../fluxcd/prod-kustomization.yaml
+  - ../qa-kustomization.yaml
+  - ../uat-kustomization.yaml
+  - ../stg-kustomization.yaml
+  - ../prod-kustomization.yaml
+  - ../bitnami-repo.yaml
