@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: backend
-        image: docker.io/vikashyogendrarao/todo-backend:latest
+        image: docker.io/vikashyogendrarao/todo-backend:v1
         env:
           - name: DB_HOST
             value: postgres
